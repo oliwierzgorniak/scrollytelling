@@ -1,0 +1,21 @@
+.nav__a {
+  text-decoration: none;
+}
+
+.nav__text {
+  text-decoration: underline;
+}
+
+.landing__links {
+  display: flex;
+  gap: 0.2em;
+}
+
+.landing__link {
+  padding: 1em;
+}
+
+.landing__link img {
+  display: block;
+  max-height: 2.5rem;
+}
