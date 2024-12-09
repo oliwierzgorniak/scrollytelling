@@ -1,3 +1,8 @@
+.landing {
+  min-height: 100vh;
+  position: relative;
+}
+
 .nav__a {
   text-decoration: none;
 }
@@ -18,4 +23,10 @@
 .landing__link img {
   display: block;
   max-height: 2.5rem;
+}
+
+.landing__mouse {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
 }
