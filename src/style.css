@@ -34,13 +34,6 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 button {
   border-radius: var(--border-radius);
   border: 1px solid transparent;
@@ -59,4 +52,23 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+li {
+  list-style-type: none;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav__a {
+  text-decoration: none;
+}
+
+.nav__text {
+  text-decoration: underline;
 }
