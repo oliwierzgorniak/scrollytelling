@@ -27,8 +27,6 @@ a {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -75,4 +73,9 @@ img {
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
+  min-height: 100vh;
+}
+
+.bold {
+  font-weight: 700;
 }
