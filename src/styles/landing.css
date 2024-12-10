@@ -1,14 +1,37 @@
 .landing {
-  /* min-height: 100vh; */
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 0;
+}
+
+.nav {
+  position: absolute;
+  right: 2em;
 }
 
 .nav__a {
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .nav__text {
   text-decoration: underline;
+}
+
+.landing__text-container {
+  margin-block-start: 12vw;
+  transform: translateX(7rem);
+}
+
+.landing__title {
+  font-size: 5.5rem;
+  margin: 0;
+}
+
+.landing__description {
+  font-size: 1.1rem;
+  margin-block-end: 2rem;
 }
 
 .landing__links {
@@ -23,6 +46,12 @@
 .landing__link img {
   display: block;
   max-height: 2.5rem;
+}
+
+.landing__video {
+  max-height: 100vh;
+  width: min-content;
+  align-self: end;
 }
 
 .landing__mouse {
