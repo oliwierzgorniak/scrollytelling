@@ -8,9 +8,11 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import handleLanding from "./scripts/handleLanding.js";
 import handleProjects from "./scripts/handleProjects.js";
+import handleEnd from "./scripts/handleEnd.js";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 handleLanding();
 handleProjects();
+handleEnd();
