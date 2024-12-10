@@ -1,0 +1,27 @@
+.end {
+  background-image: url("../assets/end-background.jpg");
+  background-position: bottom 40% center;
+  background-size: cover;
+  border: 1em solid var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* justify-content: center; */
+}
+
+.end__title {
+  font-size: 7.5rem;
+  margin: 0;
+  margin-top: 15vh;
+  margin-right: 7vw;
+}
+
+.end__links {
+  display: flex;
+  gap: 2.8em;
+  margin-right: 7vw;
+}
+
+.end__link img {
+  height: 5rem;
+}
