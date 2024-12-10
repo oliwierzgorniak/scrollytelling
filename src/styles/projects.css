@@ -1,3 +1,10 @@
+.scroll-container {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .project-container {
   display: flex;
   align-items: center;
