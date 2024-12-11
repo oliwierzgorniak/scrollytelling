@@ -1,14 +1,13 @@
-.scroll-container {
-  width: 300%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .project-container {
   display: flex;
   align-items: center;
   overflow: hidden;
+  border: 1em solid white;
+  border-bottom: none;
+}
+
+.project-container:nth-of-type(1) {
+  border-top: none;
 }
 
 .project {
