@@ -15,6 +15,6 @@ gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 handleLanding();
-// handleProjects();
+handleProjects();
 handleEnd();
 handleWacky();

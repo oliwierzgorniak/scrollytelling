@@ -8,7 +8,12 @@
 .project-container {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
+
+/* .project-container:has(.nutcracker) {
+  background-color: aquamarine;
+} */
 
 .project {
   display: grid;
