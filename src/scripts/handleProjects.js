@@ -1,6 +1,17 @@
 import gsap from "gsap";
 
 const handleProjects = () => {
+  const $nutcrackerVideo = document.querySelector(".nutcracker__video");
+  const $nutcrackerProjectContainer = document.querySelector(
+    ".project-container:has(.nutcracker)"
+  );
+  gsap.to($nutcrackerVideo, {
+    scrollTrigger: {
+      trigger: $nutcrackerProjectContainer,
+      start: "top 50%",
+      onEnter: () => $nutcrackerVideo.play(),
+    },
+  });
   const projectContainers = document.querySelectorAll(".project-container");
   projectContainers.forEach(($projectContainer) => {
     const $visualization = $projectContainer.querySelector(
