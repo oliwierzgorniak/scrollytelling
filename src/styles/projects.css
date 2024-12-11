@@ -11,10 +11,6 @@
   overflow: hidden;
 }
 
-/* .project-container:has(.nutcracker) {
-  background-color: aquamarine;
-} */
-
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
