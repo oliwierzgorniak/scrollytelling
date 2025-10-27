@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import handleLanding from "./scripts/handleLanding.js";
 import handleProjects from "./scripts/handleProjects.js";
 import handleEnd from "./scripts/handleEnd.js";
+import handleTitle from "./scripts/handleTitle.js";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -16,3 +17,5 @@ gsap.registerPlugin(ScrollTrigger);
 handleLanding();
 handleProjects();
 handleEnd();
+
+handleTitle();
