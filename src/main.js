@@ -9,14 +9,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import handleLanding from "./scripts/handleLanding.js";
 import handleProjects from "./scripts/handleProjects.js";
 import handleEnd from "./scripts/handleEnd.js";
-import handleWacky from "./scripts/handleWacky.js";
-import handleShapes from "./scripts/handleShapes.js";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 handleLanding();
 handleProjects();
-handleShapes();
-handleWacky();
 handleEnd();

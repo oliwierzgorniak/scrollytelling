@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  border: 1em solid white;
-  border-bottom: none;
+  border: var(--container-border-width) solid white;
+  border-bottom: calc(var(--container-border-width) / 2) solid white;
+  border-top: calc(var(--container-border-width) / 2) solid white;
+  height: calc(100vh - calc(var(--container-border-width) / 2) * 2);
+  box-sizing: border-box;
 }
 
 .project-container:nth-of-type(1) {
@@ -12,12 +15,16 @@
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   align-items: center;
-  gap: 3em;
-  max-width: calc(0.9 * var(--max-width));
+  gap: 5em;
   width: 100%;
   margin: auto;
+}
+
+.project__text-container {
+  width: max-content;
+  justify-self: flex-end;
 }
 
 .project__title {
@@ -27,6 +34,7 @@
 
 .project__description {
   margin-block-end: 3em;
+  max-width: 30rem;
 }
 
 .project__links {
@@ -52,5 +60,7 @@
 }
 
 .project__visualization {
-  max-width: 100%;
+  max-width: 30rem;
+  justify-self: flex-start;
+  height: auto;
 }

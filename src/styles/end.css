@@ -2,10 +2,12 @@
   background-image: url("../assets/end-background.jpg");
   background-position: bottom 40% center;
   background-size: cover;
-  border: 1em solid var(--font-color);
+  border: var(--container-border-width) solid var(--font-color);
   display: flex;
   flex-direction: column;
   align-items: end;
+  min-height: calc(100vh - var(--container-border-width) / 2);
+  border-top-width: calc(var(--container-border-width) / 2);
 }
 
 .end__title-container {
@@ -16,7 +18,8 @@
 .end__title {
   font-size: 7.5rem;
   margin: 0;
-  margin-inline-end: 7vw;
+  margin-inline-end: 14vw;
+  margin-bottom: 0.2em;
   overflow: hidden;
   line-height: 1;
 }
@@ -24,9 +27,18 @@
 .end__links {
   display: flex;
   gap: 2.8em;
-  margin-right: 7vw;
+  margin-right: 14vw;
+  align-items: flex-end;
 }
 
 .end__link img {
   height: 5rem;
+}
+
+.end__github {
+  margin-right: -0.49rem;
+}
+
+.end__link .end__email-icon {
+  height: 4.2rem;
 }

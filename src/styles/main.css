@@ -2,7 +2,8 @@
   --background-color: #0c0c0c;
   --font-color: #fff;
   --border-radius: 0.1em;
-  --max-width: 1280px;
+  --max-width: 1500px;
+  --container-border-width: 0.6em;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.7;
@@ -75,7 +76,6 @@ img {
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
-  min-height: 100vh;
 }
 
 .bold {
