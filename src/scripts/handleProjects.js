@@ -9,35 +9,39 @@ const handleProjects = () => {
     const $textContainer = $projectContainer.querySelector(
       ".project__text-container"
     );
-    gsap.fromTo(
-      $visualization,
-      {
-        y: "-80vh",
-      },
-      {
-        y: "80vh",
-        scrollTrigger: {
-          trigger: $projectContainer,
-          start: "top 50%",
-          scrub: 0.5,
-        },
-      }
-    );
 
-    gsap.fromTo(
-      $textContainer,
-      {
-        y: "60vh",
-      },
-      {
-        y: "-60vh",
-        scrollTrigger: {
-          trigger: $projectContainer,
-          start: "top 50%",
-          scrub: 0.5,
+    let mm = gsap.matchMedia();
+    mm.add("(orientation: landscape)", () => {
+      gsap.fromTo(
+        $visualization,
+        {
+          y: "-80vh",
         },
-      }
-    );
+        {
+          y: "80vh",
+          scrollTrigger: {
+            trigger: $projectContainer,
+            start: "top 50%",
+            scrub: 0.5,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        $textContainer,
+        {
+          y: "60vh",
+        },
+        {
+          y: "-60vh",
+          scrollTrigger: {
+            trigger: $projectContainer,
+            start: "top 50%",
+            scrub: 0.5,
+          },
+        }
+      );
+    });
   });
 };
 

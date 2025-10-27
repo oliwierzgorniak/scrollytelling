@@ -42,3 +42,59 @@
 .end__link .end__email-icon {
   height: 4.2rem;
 }
+
+@media (orientation: portrait) {
+  .end {
+    background-image: url("../assets/end-background.jpg");
+    background-position: 0% 10%;
+    background-size: cover;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .end__title-container {
+    overflow: hidden;
+    margin-block: 0;
+    padding: 1em;
+  }
+
+  .end__title {
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: 0.2em;
+    line-height: 1;
+  }
+
+  .end__links {
+    display: flex;
+    gap: 1.5em;
+    margin-right: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.1em;
+  }
+
+  .end__link {
+    display: flex;
+    align-items: flex-end;
+    max-height: min-content;
+  }
+
+  .end__link img {
+    display: block;
+    height: 2.8rem;
+  }
+
+  .end__link .end__email-icon {
+    height: 2.5rem;
+  }
+
+  .end__github {
+    margin-right: 0;
+  }
+
+  .end__github img {
+    aspect-ratio: 1/1;
+  }
+}

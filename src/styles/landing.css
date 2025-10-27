@@ -41,6 +41,7 @@
 .landing__links {
   display: flex;
   gap: 0.2em;
+  align-items: flex-end;
 }
 
 .landing__link {
@@ -50,6 +51,14 @@
 .landing__link img {
   display: block;
   max-height: 2.5rem;
+}
+
+.landing__email-icon {
+  height: 2.2rem;
+}
+
+.landing__cv-icon {
+  height: 2.4rem;
 }
 
 .landing__video {
@@ -63,4 +72,41 @@
   position: absolute;
   bottom: 2em;
   left: 2em;
+}
+
+@media (orientation: portrait) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .landing__text-container {
+    margin-block-start: 0;
+    transform: translateX(0);
+    padding: 1em;
+    margin-bottom: 5em;
+  }
+
+  .landing__title {
+    font-size: 3.2rem;
+    margin: 0;
+  }
+
+  .landing__description {
+    margin-block-end: 1.7rem;
+  }
+
+  .landing__links {
+    margin-left: -0.86rem;
+  }
+
+  .landing__video {
+    display: none;
+  }
 }

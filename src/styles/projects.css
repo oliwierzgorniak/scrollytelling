@@ -64,3 +64,37 @@
   justify-self: flex-start;
   height: auto;
 }
+
+.project .pitch-icon {
+  height: 2.1rem;
+}
+
+@media (orientation: portrait) {
+  .project-container {
+    padding: 1em;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 3em;
+  }
+
+  .project__text-container {
+    width: 100%;
+  }
+
+  .project__title {
+    line-height: 1.1;
+  }
+
+  .project__description {
+    margin-block-end: 1.7em;
+    font-size: 0.9rem;
+  }
+
+  .project__visualization {
+    width: 100%;
+  }
+}
